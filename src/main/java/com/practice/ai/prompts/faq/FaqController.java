@@ -1,4 +1,4 @@
-package com.practice.ai.prompts.faq.configuration;
+package com.practice.ai.prompts.faq;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.PromptChatMemoryAdvisor;
