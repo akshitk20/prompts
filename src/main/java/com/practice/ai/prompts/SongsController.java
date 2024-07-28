@@ -34,7 +34,7 @@ public class SongsController {
         // for getting list in response
         ListOutputConverter listOutputConverter = new ListOutputConverter(new DefaultConversionService());
 
-        PromptTemplate promptTemplate = new PromptTemplate(message, Map.of("artist", artist) "format", listOutputConverter.getFormat());
+        PromptTemplate promptTemplate = new PromptTemplate(message, Map.of("artist", artist, "format", listOutputConverter.getFormat()));
         Prompt prompt = promptTemplate.create();
         return listOutputConverter.convert(chatClient.prompt(prompt)
                 .call()
